@@ -1,0 +1,108 @@
+.header{
+    padding: 20px;
+    background-color: rgb(28, 30, 28);
+    display: flex;
+
+    align-items:center;
+justify-content: space-around;
+}
+.welcome{
+
+    width:fit-content
+}
+.images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* espace vertical entre les images */
+}
+
+.images img {
+    width: 400px; /* ou la largeur que tu veux */
+}
+
+/* Décalage horizontal pour chaque image */
+.images img:nth-child(1) {
+    transform: translateX(0px);
+}
+
+.images img:nth-child(2) {
+    transform: translateX(30px);
+}
+
+.images img:nth-child(3) {
+    transform: translateX(-20px);
+}
+
+.header-title h1 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(32px, 5vw, 64px);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.header-title .auto {
+    color: white;
+}
+
+.header-title .showroom {
+    color: #dc4400; /* rouge/orange fort */
+}
+h3{
+    color: #333;              /* noir adouci */
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.orange-dots {
+    list-style-type: disc; /* point */
+    padding-left: 20px;
+}
+
+.orange-dots li {
+    color: rgb(249, 244, 244); /* texte */
+}
+
+.orange-dots li::marker {
+    color: #dc4400; /* couleur du point */
+}
+h2{
+    color: #e9e5e5;              /* noir profond */
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    margin-top:0 px;
+    margin-bottom: 14px;
+}
+
+
+ /* .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+
+.welcome {
+    width: 45%;
+}
+
+
+.images {
+    width: 45%;
+    display: flex;
+    gap: 15px;
+    background-color: aqua;
+}
+
+.images img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+} */

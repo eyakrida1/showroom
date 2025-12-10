@@ -1,0 +1,52 @@
+.header{
+    padding-top: 50px;
+
+}
+input{
+    color: azure;
+    border: aliceblue solid;
+}
+.btn-success{
+    color: aliceblue;
+    background-color: #dc4400;
+}
+.input-group-text{
+    background-color: #0f0f0f;
+    color: aliceblue;
+}
+.auto-container{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+
+}
+.card-body-even p{
+    color: rgb(123, 125, 126);
+}
+.card-body-odd p{
+    color: rgb(228, 231, 232);
+}
+
+
+.card{
+    margin: 20px;
+    box-shadow: 2px 2px 10px #dc4400; 
+    /* mdn website*/
+}
+.card-body-even{
+    background-color: azure;
+    color: #dc4400;
+}
+.card-body-odd{
+    background-color: #373534;
+    color: #dc4400;
+}
+.header{
+    background-color: #606060;
+    height: 150px;
+
+}
+.btn{
+background-color: #0f0f0f;
+}

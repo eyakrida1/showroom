@@ -1,0 +1,33 @@
+<div class="container-fluid header">
+    <div class="input-group input-group-lg">
+  <span class="input-group-text" id="inputGroup-sizing-lg">Brand</span>
+  <input (input)="selectAutolist(brand.value)" type="text" class="form-control" 
+  placeholder="e.g Audi" #brand>
+<button (click)="selectAutolist(brand.value)" class="btn btn-success"> Search</button>
+</div>
+</div>
+
+<!-- pour envoyer un copsant du fils au pere vers un evenement et du pere au fils vers une variable -->
+
+<div class="container auto-container">
+  @for (auto of selectedAutos; track auto.id;let indice=$index;let even=$even;let odd=$odd) { 
+    <!--- index(affiche l'indice) // even(true si l'element est pair) // odd(true si l'element est impair)-->
+    <!--- @if(odd){......} (pour afficher les voitures d'indices impair)-->
+    <div class="card" style="width: 18rem;">
+  <img src={{auto.photo}} class="card-img-top" alt="...">
+  <!-- <img [src]=auto.photo class="card-img-top" alt="...">  -->
+  <div class="card-body" [ngClass]="{'card-body-even':even,'card-body-odd':odd}">
+    <h5 class="card-title" [ngStyle]="{'text-decoration':'underline'}" >{{auto.brand}} - {{auto.model}}</h5>
+    <p class="card-text">Power : {{auto.power}}</p>
+    <p class="card-text">Price : {{auto.price|currency:'EUR'}}</p>
+    <p class="card-text">Only {{auto.availability}} units available</p>
+    <button class="btn btn-primary"
+    (click)="showDetails(auto)">More details</button>
+  </div>
+</div>
+  }
+
+  @empty {
+    <h3>no cars found....</h3>
+  }
+</div>
