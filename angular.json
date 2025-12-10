@@ -14,7 +14,7 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
-            "outputPath":"dist/movie-app",
+            "outputPath":"dist/showroom-auto",
             "polyfills": [
               "zone.js"
             ],
